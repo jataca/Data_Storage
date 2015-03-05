@@ -57,7 +57,7 @@ public class MainActivity extends ActionBarActivity {
         SharedPreferences sharedPref = this.getPreferences(Context.MODE_PRIVATE);
         SharedPreferences.Editor editor = sharedPref.edit();
         editor.putInt(key, count);
-        editor.commit();
+        editor.apply();
     }
 
 
